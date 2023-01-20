@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rock Paper Scissors Lizard Spock</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <!-- As a link -->
+  <nav class="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" onclick="window.location.reload();" href="#">【=◈︿◈=】</a>
+      <a class="navbar navButton" onclick="window.location.reload();" href="#">
+        <h1 class="navText">Home</h1>
+      </a>
+    </div>
+  </nav>
+
+  <div id="thisOne" class="container-fluid pageContainer">
+
+    <div id="rowOne" class="row titleRow">
+      <div class="titleBox">
+        <h1 class="titleText">Rock Paper Scissors Lizard Spock</h1>
+      </div>
+    </div>
+
+    <div id="rowTwo" class="row optionsRow">
+      <a id="computerPress" class="optionBox" href="#">
+        <img class="computerImg" src="./assets/computer.png" alt="computer">
+        <h1 class="optionBoxText">VS Computer</h1>
+      </a>
+      <a id="playerPress" class="optionBox" href="#">
+        <img class="p2Img" src="./assets/P2.png" alt="p2">
+        <h1 class="optionBoxText">VS Player 2</h1>
+      </a>
+      <a id="kaidoPress" class="optionBox" href="#">
+        <img class="kaidoImg" src="./assets/Kaido.jpg" alt="Kaido">
+        <h1 class="optionBoxText">VS Kaido</h1>
+      </a>
+    </div>
+
+
+
+
+
+    <div id="rowThree" class="computerTitleRoundRow">
+      <div class="computerTitleRoundBox">
+        <h1 class="computerTitleRoundText">How many rounds?</h1>
+      </div>
+    </div>
+
+    <div id="rowFour" class="row optionsRoundRow">
+      <a id="computerRound1Press" class="optionRoundBox" href="#">
+        <img class="computerImg" src="./assets/Dice.png" alt="computer">
+        <h1 class="optionBoxText">1 out of 1</h1>
+      </a>
+      <a id="computerRound1Press2" class="optionRoundBox" href="#">
+        <img class="p2Img" src="./assets/Dice.png" alt="p2">
+        <h1 class="optionBoxText">3 out of 5</h1>
+      </a>
+      <a id="computerRound1Press3" class="optionRoundBox" href="#">
+        <img class="kaidoImg" src="./assets/Dice.png" alt="Kaido">
+        <h1 class="optionBoxText">4 out of 7</h1>
+      </a>
+    </div>
+
+    <div id="rowFour2" class="row optionsRoundRow">
+      <a id="playerRound1Press" class="optionRoundBox" href="#">
+        <img class="computerImg" src="./assets/Dice.png" alt="computer">
+        <h1 class="optionBoxText">1 out of 1</h1>
+      </a>
+      <a id="playerRound1Press2" class="optionRoundBox" href="#">
+        <img class="p2Img" src="./assets/Dice.png" alt="p2">
+        <h1 class="optionBoxText">3 out of 5</h1>
+      </a>
+      <a id="playerRound1Press3" class="optionRoundBox" href="#">
+        <img class="kaidoImg" src="./assets/Dice.png" alt="Kaido">
+        <h1 class="optionBoxText">4 out of 7</h1>
+      </a>
+    </div>
+
+
+
+
+
+
+    <div id="rowFive" class="computerTitleRound1of1Row">
+      <div class="computerTitleRound1of1Box">
+        <h1 class="computerTitleRoundText">What do you choose?</h1>
+      </div>
+    </div>
+
+
+    <div id="rowSix" class="row optionsRound1of1Row">
+      <a id="computerScissorsRound1of1Press" class="optionScissorsRound1of1Box" href="#">
+        <img class="computer2Img" src="./assets/Scissors.png" alt="scissors">
+        <h1 class="optionBoxText">Scissors</h1>
+      </a>
+    </div>
+
+
+    <div id="rowSeven" class="row optionsRound1of1Row2">
+      <a id="computerSpockRound1of1Press" class="optionScissorsRound1of1Box" href="#">
+        <img class="computer2Img" src="./assets/Spock.png" alt="spock">
+        <h1 class="optionBoxText">Spock</h1>
+      </a>
+
+      <div id="scoreCountId" class="scoreCount">
+        <h1 id="playerScoreFirst" class="scoreText">0</h1>
+        <h1 class="scoreText">-</h1>
+        <h1 id="player2ScoreFirst" class="scoreText">0</h1>
+      </div>
+
+      <a id="computerPaperRound1of1Press" class="optionScissorsRound1of1Box" href="#">
+        <img class="computer2Img" src="./assets/Paper.png" alt="paper">
+        <h1 class="optionBoxText">Paper</h1>
+      </a>
+    </div>
+
+
+    <div id="rowEight" class="row optionsRound1of1Row3">
+      <a id="computerRockRound1of1Press" class="optionScissorsRound1of1Box" href="#">
+        <img class="computerImg" src="./assets/Rock.png" alt="rock">
+        <h1 class="optionBoxText">Rock</h1>
+      </a>
+
+      <a id="computerLizardRound1of1Press" class="optionScissorsRound1of1Box" href="#">
+        <img class="computerImg" src="./assets/Lizard.png" alt="lizard">
+        <h1 class="optionBoxText">Lizard</h1>
+      </a>
+    </div>
+
+
+
+
+
+
+    <div id="rowFive2" class="computerTitleRound1of1Row">
+      <div class="computerTitleRound1of1Box">
+        <h1 class="computerTitleRoundText">What does player 1 choose?</h1>
+      </div>
+    </div>
+
+
+    <div id="rowSix2" class="row optionsRound1of1Row">
+      <a id="playerScissorsRound1of1Press" class="optionScissorsRound1of1Box" href="#">
+        <img class="computer2Img" src="./assets/Scissors.png" alt="scissors">
+        <h1 class="optionBoxText">Scissors</h1>
+      </a>
+    </div>
+
+
+    <div id="rowSeven2" class="row optionsRound1of1Row2">
+      <a id="playerSpockRound1of1Press" class="optionScissorsRound1of1Box" href="#">
+        <img class="computer2Img" src="./assets/Spock.png" alt="spock">
+        <h1 class="optionBoxText">Spock</h1>
+      </a>
+
+      <!-- <div id="scoreCountIdplayer" class="scoreCount">
+        <h1 id="playerScoreFirstplayer" class="scoreText">0</h1>
+        <h1 class="scoreText">-</h1>
+        <h1 id="player2ScoreFirstplayer" class="scoreText">0</h1>
+      </div> -->
+
+      <a id="playerPaperRound1of1Press" class="optionScissorsRound1of1Box" href="#">
+        <img class="computer2Img" src="./assets/Paper.png" alt="paper">
+        <h1 class="optionBoxText">Paper</h1>
+      </a>
+    </div>
+
+
+    <div id="rowEight2" class="row optionsRound1of1Row3">
+      <a id="playerRockRound1of1Press" class="optionScissorsRound1of1Box" href="#">
+        <img class="computerImg" src="./assets/Rock.png" alt="rock">
+        <h1 class="optionBoxText">Rock</h1>
+      </a>
+
+      <a id="playerLizardRound1of1Press" class="optionScissorsRound1of1Box" href="#">
+        <img class="computerImg" src="./assets/Lizard.png" alt="lizard">
+        <h1 class="optionBoxText">Lizard</h1>
+      </a>
+    </div>
+
+
+
+
+
+    <div id="rowFive3" class="computerTitleRound1of1Row">
+      <div class="computerTitleRound1of1Box">
+        <h1 class="computerTitleRoundText">What does player 2 choose?</h1>
+      </div>
+    </div>
+
+
+    <div id="rowSix3" class="row optionsRound1of1Row">
+      <a id="player2ScissorsRound1of1Press" class="optionScissorsRound1of1Box" href="#">
+        <img class="computer2Img" src="./assets/Scissors.png" alt="scissors">
+        <h1 class="optionBoxText">Scissors</h1>
+      </a>
+    </div>
+
+
+    <div id="rowSeven3" class="row optionsRound1of1Row2">
+      <a id="player2SpockRound1of1Press" class="optionScissorsRound1of1Box" href="#">
+        <img class="computer2Img" src="./assets/Spock.png" alt="spock">
+        <h1 class="optionBoxText">Spock</h1>
+      </a>
+
+      <!-- <div id="scoreCountIdplayer" class="scoreCount">
+        <h1 id="playerScoreFirstplayer" class="scoreText">0</h1>
+        <h1 class="scoreText">-</h1>
+        <h1 id="player2ScoreFirstplayer" class="scoreText">0</h1>
+      </div> -->
+
+      <a id="player2PaperRound1of1Press" class="optionScissorsRound1of1Box" href="#">
+        <img class="computer2Img" src="./assets/Paper.png" alt="paper">
+        <h1 class="optionBoxText">Paper</h1>
+      </a>
+    </div>
+
+
+    <div id="rowEight3" class="row optionsRound1of1Row3">
+      <a id="player2RockRound1of1Press" class="optionScissorsRound1of1Box" href="#">
+        <img class="computerImg" src="./assets/Rock.png" alt="rock">
+        <h1 class="optionBoxText">Rock</h1>
+      </a>
+
+      <a id="player2LizardRound1of1Press" class="optionScissorsRound1of1Box" href="#">
+        <img class="computerImg" src="./assets/Lizard.png" alt="lizard">
+        <h1 class="optionBoxText">Lizard</h1>
+      </a>
+    </div>
+
+
+
+
+
+    <div id="rowFive4" class="computerTitleRound1of1Row">
+      <div class="computerTitleRound1of1Box">
+        <h1 class="computerTitleRoundText">What does player 1 choose?</h1>
+      </div>
+    </div>
+
+
+    <div id="rowSix4" class="row optionsRound1of1Row">
+      <a id="playerScissorsRound1of1Press2" class="optionScissorsRound1of1Box" href="#">
+        <img class="computer2Img" src="./assets/Scissors.png" alt="scissors">
+        <h1 class="optionBoxText">Scissors</h1>
+      </a>
+    </div>
+
+
+    <div id="rowSeven4" class="row optionsRound1of1Row2">
+      <a id="playerSpockRound1of1Press2" class="optionScissorsRound1of1Box" href="#">
+        <img class="computer2Img" src="./assets/Spock.png" alt="spock">
+        <h1 class="optionBoxText">Spock</h1>
+      </a>
+
+      <div id="scoreCountIdPvp" class="scoreCount">
+        <h1 id="playerScore3of5" class="scoreText">0</h1>
+        <h1 class="scoreText">-</h1>
+        <h1 id="player2Score3of5" class="scoreText">0</h1>
+      </div>
+
+      <a id="playerPaperRound1of1Press2" class="optionScissorsRound1of1Box" href="#">
+        <img class="computer2Img" src="./assets/Paper.png" alt="paper">
+        <h1 class="optionBoxText">Paper</h1>
+      </a>
+    </div>
+
+
+    <div id="rowEight4" class="row optionsRound1of1Row3">
+      <a id="playerRockRound1of1Press2" class="optionScissorsRound1of1Box" href="#">
+        <img class="computerImg" src="./assets/Rock.png" alt="rock">
+        <h1 class="optionBoxText">Rock</h1>
+      </a>
+
+      <a id="playerLizardRound1of1Press2" class="optionScissorsRound1of1Box" href="#">
+        <img class="computerImg" src="./assets/Lizard.png" alt="lizard">
+        <h1 class="optionBoxText">Lizard</h1>
+      </a>
+    </div>
+
+
+
+
+
+    <div id="rowFive5" class="computerTitleRound1of1Row">
+      <div class="computerTitleRound1of1Box">
+        <h1 class="computerTitleRoundText">What does player 2 choose?</h1>
+      </div>
+    </div>
+
+
+    <div id="rowSix5" class="row optionsRound1of1Row">
+      <a id="player2ScissorsRound1of1Press2" class="optionScissorsRound1of1Box" href="#">
+        <img class="computer2Img" src="./assets/Scissors.png" alt="scissors">
+        <h1 class="optionBoxText">Scissors</h1>
+      </a>
+    </div>
+
+
+    <div id="rowSeven5" class="row optionsRound1of1Row2">
+      <a id="player2SpockRound1of1Press2" class="optionScissorsRound1of1Box" href="#">
+        <img class="computer2Img" src="./assets/Spock.png" alt="spock">
+        <h1 class="optionBoxText">Spock</h1>
+      </a>
+
+      <div id="scoreCountIdPvp2" class="scoreCount">
+        <h1 id="playerScore3of52" class="scoreText">0</h1>
+        <h1 class="scoreText">-</h1>
+        <h1 id="player2Score3of52" class="scoreText">0</h1>
+      </div>
+
+      <a id="player2PaperRound1of1Press2" class="optionScissorsRound1of1Box" href="#">
+        <img class="computer2Img" src="./assets/Paper.png" alt="paper">
+        <h1 class="optionBoxText">Paper</h1>
+      </a>
+    </div>
+
+
+    <div id="rowEight5" class="row optionsRound1of1Row3">
+      <a id="player2RockRound1of1Press2" class="optionScissorsRound1of1Box" href="#">
+        <img class="computerImg" src="./assets/Rock.png" alt="rock">
+        <h1 class="optionBoxText">Rock</h1>
+      </a>
+
+      <a id="player2LizardRound1of1Press2" class="optionScissorsRound1of1Box" href="#">
+        <img class="computerImg" src="./assets/Lizard.png" alt="lizard">
+        <h1 class="optionBoxText">Lizard</h1>
+      </a>
+    </div>
+
+
+
+
+
+    <div id="rowFive6" class="computerTitleRound1of1Row">
+      <div class="computerTitleRound1of1Box">
+        <h1 class="computerTitleRoundText">What does player 1 choose?</h1>
+      </div>
+    </div>
+
+
+    <div id="rowSix6" class="row optionsRound1of1Row">
+      <a id="playerScissorsRound1of1Press3" class="optionScissorsRound1of1Box" href="#">
+        <img class="computer2Img" src="./assets/Scissors.png" alt="scissors">
+        <h1 class="optionBoxText">Scissors</h1>
+      </a>
+    </div>
+
+
+    <div id="rowSeven6" class="row optionsRound1of1Row2">
+      <a id="playerSpockRound1of1Press3" class="optionScissorsRound1of1Box" href="#">
+        <img class="computer2Img" src="./assets/Spock.png" alt="spock">
+        <h1 class="optionBoxText">Spock</h1>
+      </a>
+
+      <div id="scoreCountIdPvp3" class="scoreCount">
+        <h1 id="playerScore4of7" class="scoreText">0</h1>
+        <h1 class="scoreText">-</h1>
+        <h1 id="player2Score4of7" class="scoreText">0</h1>
+      </div>
+
+      <a id="playerPaperRound1of1Press3" class="optionScissorsRound1of1Box" href="#">
+        <img class="computer2Img" src="./assets/Paper.png" alt="paper">
+        <h1 class="optionBoxText">Paper</h1>
+      </a>
+    </div>
+
+
+    <div id="rowEight6" class="row optionsRound1of1Row3">
+      <a id="playerRockRound1of1Press3" class="optionScissorsRound1of1Box" href="#">
+        <img class="computerImg" src="./assets/Rock.png" alt="rock">
+        <h1 class="optionBoxText">Rock</h1>
+      </a>
+
+      <a id="playerLizardRound1of1Press3" class="optionScissorsRound1of1Box" href="#">
+        <img class="computerImg" src="./assets/Lizard.png" alt="lizard">
+        <h1 class="optionBoxText">Lizard</h1>
+      </a>
+    </div>
+
+
+
+
+
+    <div id="rowFive7" class="computerTitleRound1of1Row">
+      <div class="computerTitleRound1of1Box">
+        <h1 class="computerTitleRoundText">What does player 2 choose?</h1>
+      </div>
+    </div>
+
+
+    <div id="rowSix7" class="row optionsRound1of1Row">
+      <a id="player2ScissorsRound1of1Press3" class="optionScissorsRound1of1Box" href="#">
+        <img class="computer2Img" src="./assets/Scissors.png" alt="scissors">
+        <h1 class="optionBoxText">Scissors</h1>
+      </a>
+    </div>
+
+
+    <div id="rowSeven7" class="row optionsRound1of1Row2">
+      <a id="player2SpockRound1of1Press3" class="optionScissorsRound1of1Box" href="#">
+        <img class="computer2Img" src="./assets/Spock.png" alt="spock">
+        <h1 class="optionBoxText">Spock</h1>
+      </a>
+
+      <div id="scoreCountIdPvp4" class="scoreCount">
+        <h1 id="playerScore4of72" class="scoreText">0</h1>
+        <h1 class="scoreText">-</h1>
+        <h1 id="player2Score4of72" class="scoreText">0</h1>
+      </div>
+
+      <a id="player2PaperRound1of1Press3" class="optionScissorsRound1of1Box" href="#">
+        <img class="computer2Img" src="./assets/Paper.png" alt="paper">
+        <h1 class="optionBoxText">Paper</h1>
+      </a>
+    </div>
+
+
+    <div id="rowEight7" class="row optionsRound1of1Row3">
+      <a id="player2RockRound1of1Press3" class="optionScissorsRound1of1Box" href="#">
+        <img class="computerImg" src="./assets/Rock.png" alt="rock">
+        <h1 class="optionBoxText">Rock</h1>
+      </a>
+
+      <a id="player2LizardRound1of1Press3" class="optionScissorsRound1of1Box" href="#">
+        <img class="computerImg" src="./assets/Lizard.png" alt="lizard">
+        <h1 class="optionBoxText">Lizard</h1>
+      </a>
+    </div>    
+
+
+
+
+
+
+    <div id="rowNine" class="winnerRow">
+      <div class="winnerBox">
+        <h1 id="winnerTextId" class="winnerText">You Win!</h1>
+        <h2 id="winnerSubTextId" class="winnerSubText">Text</h2>
+      </div>
+    </div>
+
+    <div id="rowTen" class="winLoseRow">
+      <a id="getHomeButtonId" class="getHomeButton text-decoration-none" href="#">
+        <h1 class="getHomeButtonText">Home</h1>
+      </a>
+    </div>
+
+      <div id="rowTen2" class="winLoseRow">
+        <a id="getHomeButtonId2" class="getHomeButton text-decoration-none" href="#">
+          <h1 class="getHomeButtonText">Continue</h1>
+        </a>
+      </div>
+
+      <div id="rowTen3" class="winLoseRow">
+        <a id="getHomeButtonId3" class="getHomeButton text-decoration-none" href="#">
+          <h1 class="getHomeButtonText">Continue</h1>
+        </a>
+      </div>   
+      
+      <div id="rowTen4" class="winLoseRow">
+        <a id="getHomeButtonId4" class="getHomeButton text-decoration-none" href="#">
+          <h1 class="getHomeButtonText">Continue</h1>
+        </a>
+      </div>    
+      
+      <div id="rowTen5" class="winLoseRow">
+        <a id="getHomeButtonId5" class="getHomeButton text-decoration-none" href="#">
+          <h1 class="getHomeButtonText">Continue</h1>
+        </a>
+      </div>   
+
+
+
+
+
+      <div id="rowEleven" class="computerTitleRound1of1Row">
+        <div class="computerTitleRound1of1Box">
+          <h1 class="computerTitleRoundText">What do you choose?</h1>
+        </div>
+      </div>
+
+
+      <div id="rowTwelve" class="row optionsRound1of1Row">
+        <a id="computerScissorsRound1of1Press2" class="optionScissorsRound1of1Box" href="#">
+          <img class="computer2Img" src="./assets/Scissors.png" alt="scissors">
+          <h1 class="optionBoxText">Scissors</h1>
+        </a>
+      </div>
+
+
+      <div id="rowThirteen" class="row optionsRound1of1Row2">
+        <a id="computerSpockRound1of1Press2" class="optionScissorsRound1of1Box" href="#">
+          <img class="computer2Img" src="./assets/Spock.png" alt="spock">
+          <h1 class="optionBoxText">Spock</h1>
+        </a>
+
+        <div id="scoreCountId2" class="scoreCount">
+          <h1 id="playerScore" class="scoreText">0</h1>
+          <h1 class="scoreText">-</h1>
+          <h1 id="player2Score" class="scoreText">0</h1>
+        </div>
+
+        <a id="computerPaperRound1of1Press2" class="optionScissorsRound1of1Box" href="#">
+          <img class="computer2Img" src="./assets/Paper.png" alt="paper">
+          <h1 class="optionBoxText">Paper</h1>
+        </a>
+      </div>
+
+
+      <div id="rowFourteen" class="row optionsRound1of1Row3">
+        <a id="computerRockRound1of1Press2" class="optionScissorsRound1of1Box" href="#">
+          <img class="computerImg" src="./assets/Rock.png" alt="rock">
+          <h1 class="optionBoxText">Rock</h1>
+        </a>
+
+        <a id="computerLizardRound1of1Press2" class="optionScissorsRound1of1Box" href="#">
+          <img class="computerImg" src="./assets/Lizard.png" alt="lizard">
+          <h1 class="optionBoxText">Lizard</h1>
+        </a>
+      </div>
+
+
+
+
+
+
+      <div id="rowEleven2" class="computerTitleRound1of1Row">
+        <div class="computerTitleRound1of1Box">
+          <h1 class="computerTitleRoundText">What do you choose?</h1>
+        </div>
+      </div>
+
+
+      <div id="rowTwelve2" class="row optionsRound1of1Row">
+        <a id="computerScissorsRound1of1Press3" class="optionScissorsRound1of1Box" href="#">
+          <img class="computer2Img" src="./assets/Scissors.png" alt="scissors">
+          <h1 class="optionBoxText">Scissors</h1>
+        </a>
+      </div>
+
+
+      <div id="rowThirteen2" class="row optionsRound1of1Row2">
+        <a id="computerSpockRound1of1Press3" class="optionScissorsRound1of1Box" href="#">
+          <img class="computer2Img" src="./assets/Spock.png" alt="spock">
+          <h1 class="optionBoxText">Spock</h1>
+        </a>
+
+        <div id="scoreCountId3" class="scoreCount">
+          <h1 id="playerScore2" class="scoreText">0</h1>
+          <h1 class="scoreText">-</h1>
+          <h1 id="player2Score2" class="scoreText">0</h1>
+        </div>
+
+        <a id="computerPaperRound1of1Press3" class="optionScissorsRound1of1Box" href="#">
+          <img class="computer2Img" src="./assets/Paper.png" alt="paper">
+          <h1 class="optionBoxText">Paper</h1>
+        </a>
+      </div>
+
+
+      <div id="rowFourteen2" class="row optionsRound1of1Row3">
+        <a id="computerRockRound1of1Press3" class="optionScissorsRound1of1Box" href="#">
+          <img class="computerImg" src="./assets/Rock.png" alt="rock">
+          <h1 class="optionBoxText">Rock</h1>
+        </a>
+
+        <a id="computerLizardRound1of1Press3" class="optionScissorsRound1of1Box" href="#">
+          <img class="computerImg" src="./assets/Lizard.png" alt="lizard">
+          <h1 class="optionBoxText">Lizard</h1>
+        </a>
+      </div>
+
+
+    </div>
+
+
+    <script src="./js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

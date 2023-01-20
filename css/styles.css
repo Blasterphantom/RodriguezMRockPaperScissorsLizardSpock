@@ -1,0 +1,337 @@
+@font-face {
+    font-family: GowunBatang;
+    src: url(../assets/Gowun_Batang/GowunBatang-Regular.ttf);
+}
+
+@font-face {
+    font-family: Orbitron;
+    src: url(../assets/Orbitron/static/Orbitron-Bold.ttf);
+}
+
+nav.navbar{
+    height: 10vh;
+}
+
+.navbar{
+    background-color: #FFB7C5;
+}
+
+.navbar-brand{
+    font-family: GowunBatang;
+}
+
+a.navbar-brand:hover{
+    color: white;
+}
+
+.navButton{
+    text-decoration: none; 
+}
+
+.navText{
+    color: black;
+    font-size: 20px;
+    font-family: GowunBatang;
+    margin: 0;
+}
+
+.navText:hover{
+    color: white;
+}
+
+.pageContainer{
+    margin: 0;
+    padding: 0;
+    height: 90vh;
+    background-image: url(../assets/wanoScene.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.kaidoContainer{
+    margin: 0;
+    padding: 0;
+    height: 90vh;
+    background-image: url(../assets/kadiovid.mp4);
+    background-position: center;
+    background-size: cover;
+}
+
+.titleBox{
+    width: 650px;
+    height: 250px;
+    background-color: #FFB7C5;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleText{
+    font-family: GowunBatang;
+    font-size: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.titleRow{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+}
+
+.optionsRow{
+    margin: 0;
+    padding: 0;
+    padding-top: 17vh;
+    width: 650px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.optionBox{
+    height: 150px;
+    width: 150px;
+    padding: 0;
+    background-color: #FFB7C5;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.computerImg{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.p2Img{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.kaidoImg{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.optionBoxText{
+    font-family: GowunBatang;
+    font-size: 20px;
+    color: black;
+}
+
+a.optionBox:hover{
+    background-color: white;
+}
+
+.computerTitleRoundRow{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+}
+
+.computerTitleRoundBox{
+    width: 650px;
+    height: 250px;
+    background-color: #FFB7C5;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.computerTitleRoundText{
+    font-family: GowunBatang;
+    font-size: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.optionsRoundRow{
+    margin: 0;
+    padding: 0;
+    padding-top: 17vh;
+    width: 650px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.optionRoundBox{
+    height: 150px;
+    width: 150px;
+    padding: 0;
+    background-color: #FFB7C5;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.computerTitleRound1of1Row{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+}
+
+.computerTitleRound1of1Box{
+    width: 650px;
+    height: 18vh;
+    background-color: #FFB7C5;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.optionsRound1of1Row{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+}
+
+.optionScissorsRound1of1Box{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    height: 15vh;
+    width: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFB7C5;
+    border-radius: 20px;
+}
+
+.optionsRound1of1Row2{
+    padding: 0;
+    margin: 0;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3vh;
+}
+
+.optionsRound1of1Row3{
+    padding: 0;
+    margin: 0;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12vh;
+}
+
+.computer2Img{
+    height: 5vh;
+    width: 5vh;
+    margin-bottom: 20px;
+}
+
+.winnerRow{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+}
+
+.winnerBox{
+    width: 650px;
+    height: 250px;
+    background-color: #FFB7C5;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.winnerText{
+    font-family: GowunBatang;
+    font-size: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.winnerSubText{
+    font-family: GowunBatang;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.winLoseRow{
+    margin: 0;
+    padding: 0;
+    padding-top: 17vh;
+    display: flex;
+    justify-content: center;
+}
+
+.getHomeButton{
+    background-color: #FFB7C5;
+    height: 100px;
+    width: 200px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.getHomeButtonText{
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-family: GowunBatang;
+    color: white;
+}
+
+.scoreCount{
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.scoreText{
+    padding: 0;
+    margin: 0;
+    font-family: Orbitron;
+    font-size: 60px;
+}
